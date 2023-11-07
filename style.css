@@ -42,7 +42,7 @@ header {
   z-index: 1;
   transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
   transform-origin: top right;
-  transform: scale(0); 
+  transform: scale(0);
 }
 
 .nav-menu.active {
@@ -387,10 +387,11 @@ header {
 
 .servicos-description {
   width: 100%;
-  height: 400px;
+  height: auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 40px 0;
 }
 
 .servicos-description h4 {
@@ -517,13 +518,464 @@ footer div:last-child {
   padding-right: 40px;
 }
 
+.newsletter {
+  padding: 60px 0;
+  color: #FFF;
+}
+
+.newsletter .newsletter-conteudo {
+  width: 80%;
+  height: 350px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  background: linear-gradient(to left, #F64D04, #ff783e);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.newsletter-conteudo>div {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  left: 10%;
+}
+
+.newsletter-conteudo h2 {
+  font-size: 30px;
+}
+
+.newsletter-conteudo img {
+  width: 750px;
+  margin-bottom: 66px;
+  margin-right: -2px;
+  border-radius: 30px;
+  position: absolute;
+  right: 0;
+}
+
+.newsletter-btn {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  width: 65%;
+}
+
+.newsletter input[type="email"] {
+  flex: 1;
+  border: none;
+  padding: 5px;
+  outline: none;
+  background-color: transparent;
+  color: #FFF;
+}
+
+.newsletter input[type="email"]::placeholder {
+  color: #fff;
+}
+
+
+.newsletter-btn hr {
+  width: 43px;
+  border: 1px solid #ffffff9f;
+  transform: rotate(90deg);
+}
+
+.newsletter-btn button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #FFF;
+}
+
+.blog {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0 150px 0;
+}
+
+.blog h2 {
+  margin-left: 80px;
+}
+
+.slider {
+  display: flex;
+  gap: 40px;
+  margin-left: 60px;
+  transition: transform 0.5s;
+}
+
+.slide {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: .5px;
+}
+
+.slide img {
+  width: 600px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.content {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.artigos {
+  width: 100%;
+  margin-left: 80px;
+  padding: 40px 0;
+}
+
+.artigos span {
+  border: 1px solid #F64D04;
+  border-radius: 20px;
+}
+
+.artigos span a {
+  color: #F64D04;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.mais-artigos {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.mais-artigos span {
+  border: 1px solid #000;
+  border-radius: 20px;
+}
+
+.mais-artigos span a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+.slider-arrows {
+  text-align: end;
+  margin-right: 100px;
+
+}
+
+.prev,
+.next {
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.prev {
+  margin-right: 20px;
+}
+
+.form-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  border-radius: 100px 100px 0px 0px;
+  background: linear-gradient(to left, #960019, #813B47);
+}
+
+.form-container h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.form-container>div {
+  height: 100%;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15%;
+  color: #FFF;
+}
+
+.form-container form {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-container form input,
+.form-container form textarea {
+  background: rgba(255, 255, 255, 0.10);
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.form-container form input::placeholder,
+.form-container form textarea::placeholder {
+  color: #ffffff77;
+}
+
+.form-container form input[type="text"] {
+  display: block;
+  width: 100%;
+}
+
+.form-container form input[type="email"],
+.form-container form input[type="number"] {
+  width: 49.4%;
+}
+
+.form-container img {
+  width: 400px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.form-container form button {
+  width: 100%;
+  border: none;
+  padding: 8px;
+  background-color: #300008;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+
+
+
+@media (max-width: 999px) {
+  .topo-description {
+    width: 40%;
+  }
+
+  .quem-somos-description p {
+    width: 80%;
+  }
+
+  .statistics-container {
+    padding: 30px;
+  }
+
+  .quem-somos-numbers .text {
+    padding: 0 0 60px 0;
+  }
+
+  .text p {
+    width: 90%;
+  }
+
+  .consultores div {
+    gap: 40px;
+  }
+
+  .servicos-description h4 {
+    width: 40%;
+  }
+
+  .servicos-description p {
+    width: 50%;
+  }
+
+  .card-service p {
+    padding: 0 30px;
+  }
+
+  .newsletter .newsletter-conteudo {
+    width: 90%;
+  }
+}
+
 @media (max-width: 768px) {
+  .topo-description {
+    margin-left: 30px;
+    font-size: 28px;
+  }
+
+  .topo-icons {
+    padding-left: 30px;
+  }
+
+  .quem-somos-description p {
+    width: 90%;
+  }
+
+  .statistics-container {
+    padding: 10px;
+  }
+
+  .quem-somos-numbers .text {
+    padding: 0 0 40px 0;
+  }
+
+  .text p {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .consultores div {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .consultores p {
+    width: 90%;
+  }
+
+  .servicos-description {
+    justify-content: space-around;
+    padding: 40px 20px;
+  }
+
+  .servicos-description h4 {
+    font-size: 18px;
+  }
+
+  .servicos-description p {
+    font-size: 12px;
+    width: 60%;
+  }
+
   .nav-links {
     display: none;
   }
 
   .menu-toggle {
     display: flex;
+  }
+
+  .card-service p {
+    font-size: 12px;
+  }
+
+  .newsletter .newsletter-conteudo {
+    width: 98%;
+  }
+
+  .newsletter-conteudo img {
+    width: 650px;
+    margin-bottom: 9px;
+  }
+
+  .form-container img {
+    right: -170px;
+  }
+
+}
+
+@media (max-width: 520px) {
+  .topo-description {
+    width: 50%;
+  }
+
+  .topo-icons a {
+    display: none;
+  }
+
+  .quem-somos-numbers {
+    flex-direction: column;
+  }
+
+  .statistics-container {
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .quem-somos-numbers .text {
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .text p {
+    margin: 0;
+    text-align: center;
+    width: 95%;
+  }
+
+  .consultores {
+    margin-top: 250px;
+  }
+
+  .servicos-description {
+    flex-direction: column;
+  }
+
+  .servicos-description p,
+  .servicos-description h4 {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .servicos-description h4 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .card-service p {
+    padding: 0 10px;
+  }
+
+  .card-service h2 {
+    font-size: 18px;
+  }
+
+  .newsletter-conteudo img {
+    display: none;
+  }
+
+  .newsletter-conteudo>div {
+    width: 100%;
+  }
+
+  .form-container img {
+    display: none;
+  }
+
+  .form-container>div {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .form-container h2 {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    text-align: center;
   }
 }
 
