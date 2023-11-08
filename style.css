@@ -6,7 +6,7 @@
 }
 
 body {
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 header {
@@ -540,8 +540,7 @@ header {
 .slider {
   display: flex;
   gap: 40px;
-  margin-left: 60px;
-  transition: transform 0.5s;
+  margin-left: 60px;;
 }
 
 .slide {
@@ -601,26 +600,6 @@ header {
   color: #000;
   padding: 10px;
   font-size: 16px;
-}
-
-
-.slider-arrows {
-  text-align: end;
-  margin-right: 100px;
-
-}
-
-.prev,
-.next {
-  font-size: 16px;
-  cursor: pointer;
-  border: 1px solid #000;
-  border-radius: 50%;
-  padding: 5px;
-}
-
-.prev {
-  margin-right: 20px;
 }
 
 .form-container {
@@ -994,6 +973,10 @@ footer div:last-child {
     margin-left: 20px;
   }
 
+  .slider {
+    flex-direction: column;
+  }
+
   .form-container>div {
     width: 100%;
     margin: 0;
@@ -1013,7 +996,6 @@ footer div:last-child {
     height: auto;
     flex-direction: column;
     padding: 40px 10px;
-    border: 1px solid red;
     box-sizing: border-box;
   }
   
@@ -1027,6 +1009,8 @@ footer div:last-child {
     height: auto;
     width: 100%;
     justify-content: center;
+    padding-bottom: 30px;
+
   }
   
   .footer-section div:first-child div {
@@ -1035,21 +1019,6 @@ footer div:last-child {
   
   .footer-section div:first-child p {
     width: auto;
-  }
-  
-  .footer-section img {
-    width: 180px;
-  }
-  
-  .footer-section div i {
-    font-size: 30px;
-    padding-left: 25px;
-  }
-  
-  .footer-section a {
-    color: #FFF;
-    text-decoration: none;
-    margin-right: 10px;
   }
 
   footer {
