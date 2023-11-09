@@ -1,8 +1,13 @@
+@import url('https://fonts.cdnfonts.com/css/avenir-lt-pro');
+                
+
 * {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  font-family: 'Avenir LT Pro', sans-serif;
+                                                
 }
 
 body {
@@ -162,15 +167,16 @@ header h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 40px;
 }
+
 
 .topo-description {
   margin-left: 100px;
-  font-family: Montserrat;
-  font-size: 40px;
+  font-size: 70px;
   font-weight: 900;
   color: #fff;
-  width: 25%;
+  width: 50%;
   letter-spacing: 2px;
   flex-shrink: 0;
 }
@@ -182,8 +188,8 @@ header h4 {
   border-radius: 40px;
   border: 1.5px solid #FFF;
   background-color: transparent;
-  font-size: 12px;
-  width: 200px;
+  font-size: 16px;
+  width: 300px;
   padding: 10px 10px;
   display: flex;
   justify-content: center;
@@ -256,6 +262,7 @@ header h4 {
   background-color: #fff;
   display: flex;
   align-items: center;
+  padding: 40px 0;
 }
 
 .quem-somos>div {
@@ -267,11 +274,12 @@ header h4 {
 }
 
 .quem-somos h5 {
-  margin-bottom: 40px;
+  margin-bottom: 0px;
+  font-size: 30px;
 }
 
 .quem-somos h1 {
-  font-size: 100px;
+  font-size: 130px;
 }
 
 .quem-somos h1::after {
@@ -284,10 +292,10 @@ header h4 {
 }
 
 .quem-somos div p:nth-of-type(1) {
-  font-size: 20px;
+  font-size: 30px;
 }
 .quem-somos div p:nth-of-type(2) {
-  font-size: 14px;
+  font-size: 18px;
   width: 500px;
 }
 
@@ -301,9 +309,11 @@ header h4 {
 .quem-somos a {
   border:  1px solid #000;
   border-radius: 20px;
-  width: 100px;
+  width: 200px;
   padding: 8px 10px;
   color: #000;
+  font-size: 20px;
+  text-align: center;
 }
 
 .somos-mais {
@@ -319,7 +329,7 @@ header h4 {
 }
 
 .somos-mais h2 {
-  font-size: 30px;
+  font-size: 40px;
   width: 70%;
   padding-left: 100px;
   padding-bottom: 80px;
@@ -327,7 +337,7 @@ header h4 {
 
 video {
   margin-left: 200px;
-  width: 800px;
+  width: 900px;
 }
 
 .somos-mais>div {
@@ -339,12 +349,12 @@ video {
 }
 
 .somos-mais>div h3 {
-  font-size: 30px;
+  font-size: 40px;
   width: 30%;
 }
 
 .dropdown {
-  width: 300px;
+  width: 500px;
 }
 
 .dropdown .item {
@@ -357,7 +367,7 @@ video {
 }
 
 .dropdown .item p{
-  font-size: 12px;
+  font-size: 18px;
   letter-spacing: 1px;
   padding: 10px;
 }
@@ -366,6 +376,7 @@ video {
   cursor: pointer;
   display: flex;
   align-items: center;
+  font-size: 22px;
 }
 
 .dropdown .arrow {
@@ -393,8 +404,8 @@ video {
 }
 
 .consultores p {
-  font-size: 30px;
-  width: 60%;
+  font-size: 40px;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -407,7 +418,7 @@ video {
 }
 
 .consultores img {
-  width: 250px;
+  width: 300px;
   height: auto;
   border-radius: 10px;
 }
@@ -416,20 +427,20 @@ video {
   border: 1px solid #000;
   border-radius: 20px;
   padding: 8px 12px;
-  font-size: 12px;
+  font-size: 16px;
   color: #000;
 }
 
 
 .newsletter {
-  padding: 60px 0;
+  padding: 40px 0;
   color: #FFF;
 }
 
 .newsletter .newsletter-conteudo {
-  width: 80%;
-  height: 350px;
-  margin: 0 auto;
+  width: 85%;
+  height: 450px;
+  margin-left: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -451,27 +462,29 @@ video {
 }
 
 .newsletter-conteudo h2 {
-  font-size: 30px;
+  font-size: 50px;
+}
+.newsletter-conteudo p {
+  font-size: 20px;
 }
 
 .newsletter-conteudo img {
   width: 750px;
-  margin-bottom: 66px;
-  margin-right: -2px;
   border-radius: 30px;
   position: absolute;
-  right: 0;
+  right: -2px;
+  bottom: -4px;
 }
 
 .newsletter-btn {
   display: flex;
   align-items: center;
   background: rgba(255, 255, 255, 0.5);
-  padding: 10px;
+  padding: 20px;
   margin-top: 20px;
   border-radius: 15px;
   backdrop-filter: blur(5px);
-  width: 65%;
+  width: 75%;
 }
 
 .newsletter input[type="email"] {
@@ -485,11 +498,12 @@ video {
 
 .newsletter input[type="email"]::placeholder {
   color: #fff;
+  font-size: 18px;
 }
 
 
 .newsletter-btn hr {
-  width: 43px;
+  width: 60px;
   border: 1px solid #ffffff9f;
   transform: rotate(90deg);
 }
@@ -516,7 +530,7 @@ video {
 .cards {
   display: flex;
   width: 92%;
-  padding: 40px 80px;
+  padding: 10px 10px;
   box-sizing: border-box;
 }
 
@@ -532,23 +546,22 @@ video {
 }
 
 .card img {
-  width: 300px;
+  width: 400px;
   height: auto;
 }
 
 .card h4 {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .card p {
-  font-size: 12px;
+  font-size: 14px;
 }
 .card a {
   color: #000;
   text-decoration: underline;
+  font-size: 14px;
 }
-
-
 
 .artigos {
   width: 100%;
@@ -574,16 +587,15 @@ video {
   margin-top: 40px;
 }
 
-.mais-artigos span {
-  border: 1px solid #000;
-  border-radius: 20px;
-}
 
-.mais-artigos span a {
+.mais-artigos  a {
   text-decoration: none;
   color: #000;
-  padding: 10px;
-  font-size: 16px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: 1px solid #000;
+  border-radius: 20px;
+
 }
 
 .form-container {
