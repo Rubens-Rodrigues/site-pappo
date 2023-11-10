@@ -16,6 +16,7 @@ body {
 
 a {
   text-decoration: none;
+  font-family: 'Avenir LT Pro', sans-serif;
 }
 
 header {
@@ -33,7 +34,7 @@ header {
 }
 
 .logo {
-  width: 180px;
+  width: 160px;
   height: auto;
 }
 
@@ -126,6 +127,7 @@ header {
   margin-right: 30px;
   transition: transform 0.3s ease;
   z-index: 2;
+  opacity: .6;
 }
 
 header h4 {
@@ -135,6 +137,8 @@ header h4 {
   rotate: 90deg;
   letter-spacing: 2px;
   z-index: 2;
+  font-size: 14px;
+  opacity: .6;
 }
 
 .bar {
@@ -189,13 +193,14 @@ header h4 {
   border-radius: 40px;
   border: 1.5px solid #FFF;
   background-color: transparent;
-  font-size: 16px;
-  width: 300px;
-  padding: 10px 10px;
+  font-size: 14px;
+  width: 250px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 80px;
+  font-family: 'Avenir LT Pro', sans-serif;
   transition: all .3s;
 }
 
@@ -234,6 +239,7 @@ header h4 {
   letter-spacing: 1px;
   text-decoration: none;
   color: #FFF;
+  font-family: 'Avenir LT Pro', sans-serif;
   transition: all .3s;
 }
 
@@ -276,7 +282,7 @@ header h4 {
 
 .quem-somos h5 {
   margin-bottom: 0px;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .quem-somos h1 {
@@ -293,11 +299,11 @@ header h4 {
 }
 
 .quem-somos div p:nth-of-type(1) {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .quem-somos div p:nth-of-type(2) {
-  font-size: 18px;
+  font-size: 16px;
   width: 500px;
 }
 
@@ -309,12 +315,12 @@ header h4 {
 }
 
 .quem-somos a {
-  border: 1px solid #000;
+  border: 1px solid #545454;
   border-radius: 20px;
-  width: 200px;
-  padding: 8px 10px;
-  color: #000;
-  font-size: 20px;
+  max-width: 150px;
+  padding: 12px 10px 8px 10px;
+  color: #545454;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -331,7 +337,7 @@ header h4 {
 }
 
 .somos-mais h2 {
-  font-size: 40px;
+  font-size: 30px;
   width: 70%;
   padding-left: 100px;
   padding-bottom: 80px;
@@ -339,7 +345,7 @@ header h4 {
 
 video {
   margin-left: 200px;
-  width: 900px;
+  width: 800px;
 }
 
 .somos-mais>div {
@@ -351,7 +357,7 @@ video {
 }
 
 .somos-mais>div h3 {
-  font-size: 40px;
+  font-size: 30px;
   width: 30%;
 }
 
@@ -363,8 +369,8 @@ video {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
   border-bottom: .5px solid #e3e3e34c;
 }
 
@@ -406,8 +412,8 @@ video {
 }
 
 .consultores p {
-  font-size: 40px;
-  width: 80%;
+  font-size: 30px;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -426,11 +432,11 @@ video {
 }
 
 .consultores a {
-  border: 1px solid #000;
+  border: 1px solid #545454;
   border-radius: 20px;
-  padding: 8px 12px;
+  padding: 14px 16px 10px 16px;
   font-size: 16px;
-  color: #000;
+  color: #545454;
 }
 
 
